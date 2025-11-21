@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f8fafc;
+}
+
+/* Hero Section */
+.hero {
+  background: #2563eb;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero .lead {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 8px;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+/* Bio Section */
+.bio {
+  background: #ffffff;
+  padding: 80px 0;
+  position: relative;
+}
+
+.bio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, transparent 100%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.bio h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.bio h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 4px;
+  background: #2563eb;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.bio h2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 4px;
+  background: #2563eb;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.bio .lead {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #475569;
+  font-weight: 400;
+  position: relative;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, transparent 100%);
+  border-left: 4px solid #2563eb;
+  border-radius: 0 20px 20px 0;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+.bio .btn {
+  background: #2563eb;
+  border: none;
+  padding: 14px 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0 20px 0 20px;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Skills Section */
+.skills {
+  background: #f8fafc;
+  padding: 80px 0;
+  position: relative;
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+}
+
+.skills::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, transparent 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.skills h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.skills h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 4px;
+  background: #2563eb;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.skills h2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 4px;
+  background: #2563eb;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
+}
+
+.skills .skill-point {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 25px;
+  background: #ffffff;
+  border-radius: 15px 0 15px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);
+  position: relative;
+}
+
+.skills .skill-point::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(180deg, #2563eb 0%, #0ea5e9 100%);
+  border-radius: 0 10px 10px 0;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.skills .skill-point-icon {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15), 0 0 0 8px rgba(37, 99, 235, 0.08);
+}
+
+.skills .skill-point-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255,255,255,0.8);
+}
+
+.skills .skill-point-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: 0.5px;
+}
+
+/* Education Section */
+.education {
+  background: #ffffff;
+  padding: 80px 0;
+  position: relative;
+}
+
+.education::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, transparent 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+}
+
+.education h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.education h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 4px;
+  background: #2563eb;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.education h2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 4px;
+  background: #2563eb;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.education .card {
+  border: none;
+  border-radius: 0 25px 25px 0;
+  overflow: visible;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+.education .card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: linear-gradient(180deg, #2563eb 0%, #0ea5e9 100%);
+  border-radius: 0 10px 10px 0;
+}
+
+/* Portfolio Section */
+.portfolio {
+  background: #f8fafc;
+  padding: 80px 0;
+  position: relative;
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+}
+
+.portfolio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, transparent 100%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.portfolio h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.portfolio h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 4px;
+  background: #2563eb;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.portfolio h2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 4px;
+  background: #2563eb;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.portfolio .card {
+  border: none;
+  border-radius: 20px 0 20px 0;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  height: 100%;
+  position: relative;
+}
+
+.portfolio .card-body {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.portfolio .card-title {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 1.3rem;
+  position: relative;
+  padding-left: 15px;
+}
+
+.portfolio .card-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background: #2563eb;
+  border-radius: 2px;
+}
+
+.portfolio .card-text {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* Contact Section */
+.contact {
+  background: #1e293b;
+  padding: 50px 0;
+}
+
+.contact h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.contact p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact .social-links a {
+  display: inline-block;
+  padding: 8px;
+  margin: 0 6px;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.contact hr {
+  border-color: rgba(255,255,255,0.2);
+  margin: 1.5rem 0;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section spacing */
+section {
+  position: relative;
+}

@@ -1,0 +1,194 @@
+:root {
+  --bg: #f5f5f5;
+  --card-bg: #ffffff;
+  --surface: #fafafa;
+  --accent: #333333;
+  --accent-2: #666666;
+  --border: #e0e0e0;
+  --muted: #999999;
+  --text: #333333;
+  --text-light: #666666;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--accent) !important;
+  border: 1px solid var(--accent) !important;
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: #222222 !important;
+}
+.btn-outline-danger {
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  background: transparent !important;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-outline-danger:hover {
+  background: var(--surface) !important;
+}
+.btn {
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+/* Search bar - simple design */
+.search-form-simple {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  max-width: 500px;
+}
+
+.search-input-simple {
+  flex: 1;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  outline: none;
+  border-radius: 4px;
+}
+
+.search-input-simple::placeholder {
+  color: var(--muted);
+}
+
+.search-btn-simple {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #0d9488;
+  color: white;
+  white-space: nowrap;
+}
+
+.search-btn-simple:hover {
+  background: #0f766e;
+}
+
+/* User card - simple design matching image */
+.user-card-simple {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+}
+
+.profile-picture-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  margin-bottom: 1rem;
+  border: 2px solid #e0e0e0;
+}
+
+.role-chip-simple {
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+
+.user-info-simple {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.user-info-text {
+  margin: 0;
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+/* Todo */
+.todo-wrapper {
+  max-width: 720px;
+  margin: 2.5rem auto;
+  background: var(--card-bg);
+  border-radius: 4px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.card-header.bg-primary {
+  background: transparent !important;
+  color: var(--text) !important;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+.card-body {
+  padding-top: 1rem;
+}
+
+.list-group-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-group-item:hover {
+  background: var(--surface);
+}
+
+.text-muted {
+  color: var(--muted) !important;
+}
+
+/* Inputs */
+.form-control {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.6rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.form-control:focus {
+  background: var(--card-bg);
+  border-color: var(--accent);
+  outline: none;
+}
+.form-control::placeholder {
+  color: var(--muted);
+}
