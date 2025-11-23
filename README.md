@@ -65,14 +65,3 @@ cp .env.example .env
 npm run dev
 ```
 
----
-
-## Comparison
-
-| Feature | LAB4 | LAB5 |
-|--------|------|------|
-| Redux Cart | ✅ | ✅ |
-| Language | ✅ | ✅ |
-| Register Form | ❌ | ✅ |
-| Contact Form | ❌ | ✅ |
-| Code Splitting | ❌ | ✅ |
